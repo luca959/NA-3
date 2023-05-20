@@ -50,8 +50,13 @@ As we can see, the size of the largest connected component decreases during the 
 Another important thing to notice is that Erdos-Renyi graph is very robust as a matter of fact to destroy compleately the graph we have to remove roughly 60% of the nodes.
 
 The 5 attacks can be diverged in two categories: 
-- Fast attack: Closeness, Betweenness and Degree
-- Slow attack: Random and Pagerank
+- Fast attack: Closeness, Betweenness,Degree and PageRank
+- Slow attack: Random
+
+The fast attacks have a similar behavior, in fact the experiment finish after removing 60% of the nodes. The slow attack instead finish after removing 80% of the nodes.
+Even if the fast attacks have a similar behavior , the Betwenness Attack has a better performance than the others because if a node has a higher betweenness, it means that it plays a critical role as a bridge or link between different parts of the graph. Removing a node with higher betweenness could have a bigger impact on the connectivity of the graph, as it could break many shorter paths.
+
+
 
 ## 1.2. Watts-Strogatz graph
 
@@ -67,6 +72,8 @@ It's defined by three parameters: `n`, `k` and `p`. `n` is the number of nodes, 
 As concerns for the Watts-Strogatz graph, is less robust than the Erdos-Renyi graph. In fact, to destroy compleately the graph we have to in the worst case remove roughly 50% of the nodes and in the best case 20%.
 
 On the other hand the behavior of the size of the largest connected component and the diameter is similar to the Erdos-Renyi graph.
+In this case the fast and slow attacks are the same of the previous graph but the fastest attack is the Closeness attack instead of the Betweenness attack.  
+Since links are selected randomly, nodes with greater closeness are likely to have more links, which increases the likelihood that one of these links will be removed. Thus, nodes with greater closeness tend to be more affected by link removal than those with greater betweenness.
 
 ## 2. Testing on the Real Retwork
 
