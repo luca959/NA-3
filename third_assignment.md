@@ -33,18 +33,44 @@ In this first part of the assignment we will test the robustness of the network 
 - Erdos-Renyi graph
 - Watts-Strogatz graph
 
-#### 1.1. Erdos-Renyi graph
+## 1.1. Erdos-Renyi graph
 
 The Erdos-Renyi graph is a mathematical model for generating random graphs.
-The graph is constructed by randomly assigning edges between a fixed number of nodes and it's based on two parameters: the total number of nodes in the graph, denoted as "n" and the probability of any pair of nodes being connected by an edge, denoted as "p".
-
+The graph is constructed by randomly assigning edges between a fixed number of nodes and it's based on two parameters: the total number of nodes in the graph, denoted as "n" and the probability of any pair of nodes being connected by an edge, denoted as "p".   
+  
+<strong>n</strong>:100 |
+<strong>p</strong>:0.1
 ![erdos-renyi-n100-p0.1](./src/erdos-renyi-n100-p0.1.png)
+  
+These graphs show the change of size and diameter during an attack of the network.  
+The x-axis represents the number of nodes removed from the network, the y-axis represents the size of the largest connected component and the diameter.
 
-#### 1.2. Watts-Strogatz graph
+As we can see, the size of the largest connected component decreases during the attack, while the diameter for a while increases then decreases.
+
+Another important thing to notice is that Erdos-Renyi graph is very robust as a matter of fact to destroy compleately the graph we have to remove roughly 60% of the nodes.
+
+The 5 attacks can be diverged in two categories: 
+- Fast attack: Closeness, Betweenness and Degree
+- Slow attack: Random and Pagerank
+
+## 1.2. Watts-Strogatz graph
 
 The Watts–Strogatz model is a random graph generation model that produces graphs with small-world properties, including short average path lengths and high clustering.
-It's defined by three parameters: `n`, `k` and `p`. `n` is the number of nodes, `k` is the number of nearest neighbors and `p` is the probability of rewiring each edge.
+It's defined by three parameters: `n`, `k` and `p`. `n` is the number of nodes, `k` is the number of nearest neighbors and `p` is the probability of rewiring each edge.  
+
+<strong>n</strong>:100 |
+<strong>p</strong>:0.1 |
+<strong>k</strong>:5
 
 ![watts-strogatz-n100-p0.1-k5](./src/watts-strogatz-n100-p0.1-k5.png)
 
-## 2. testing on the real network
+As concerns for the Watts-Strogatz graph, is less robust than the Erdos-Renyi graph. In fact, to destroy compleately the graph we have to in the worst case remove roughly 50% of the nodes and in the best case 20%.
+
+On the other hand the behavior of the size of the largest connected component and the diameter is similar to the Erdos-Renyi graph.
+
+## 2. Testing on the Real Retwork
+
+**BCSPWR10**, a real-world dataset containing a representation of the entire U.S. electrical power grid network.  
+The BCSPWR10 Network has the following specifications:  
+**Node**: 5300  
+**Edges**: 8271
