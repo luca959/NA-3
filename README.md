@@ -80,13 +80,10 @@ The BCSPWR10 Network has the following specifications:
 **Edges**: 8271
 The result obtained Removing each time 1% of the all nodes is the following:
 ![BCSPWR10](./src/attack_results_1percent.png)
-As we can see the Network is quite Robust infact to destroy it we ha to remove roughly the 60% of the nodes
-The fastetìst Attack to destroy the Network in the case of Size of Largest component is the Betweenness Attack while for the Diameter is the Highest Degree Attack because the Diameter is the longest shortest path between two nodes and removing the nodes with the highest degree we are removing the nodes with the most connections so we are increasing the shortest path between two nodes.
-
+As we can see the behaviur of the network is pretty similar to the Watts-Strogatz graph infact in the best case the network resist until we remove roughlòy the 60% of the node ( 50% for Watts-Strogatz graph) and in the worst case with the fastest attack (Betweennes , closeness, pagerank,degree) resist until we remove as the Watts-Strogatz graph 20%/30% of the nodes, onther interesting analysis is the behaviour of a random graph with the same nodes and edges, in order to compare the results of our network because it has a behavior similar to a random graph.
 ## 3. Test on Random Graphs 
 In this last test we will test the robustness of the network on random graphs. We generate a random graph with 5300 nodes and 8271 edges, the same number of nodes and edges of the rbecause the Diameter is the longest shortest path between two nodes and removing the nodes with the highest degree we are removing the nodes with the most connections so we are increasing the shortest path between two nodes.eal network.  
 The result obtained Removing each time 1% of the all nodes is the following:
 ![RandomG](./src/attack_result_randomGraph_1percent.png)
 
-As we expected the Random Graph is more robust than the Real Network even if the Real Network follow a behaviour similar to the Random Graph but the result obtained for what concerns the Size of the Largest Component is quite similar to the result obtained for the Real Network.
-In this case the fastest Attack for the Size of the Largest Component is the Closeness Attack while for the Diameter is the Betweenness Attack.
+As we expected the Random Graph is a little bit more robust than the Real Network even if the Real Network follow a behaviour similar to the Random Graph but the result obtained for what concerns the Size of the Largest Component is quite similar to the result obtained for the Real Network, while the Diameter analysis is pretty different the real network for what concerns the diameter value is more robust than the Random graph.
