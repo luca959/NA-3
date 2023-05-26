@@ -26,7 +26,7 @@ Our analysis will be based on the following metrics:
 - **size of the largest connected component** - we expect this metric to decrease during the attacks
 - **diameter** - we expect this metric to increase (before dipping) during the attacks
 
-### 1. testing on small graphs
+### 1. Testing on Small graphs
 
 In this first part of the assignment we will test the robustness of the network on small graphs. We will use the following graphs:
 
@@ -81,3 +81,15 @@ Since links are selected randomly, nodes with greater closeness are likely to ha
 The BCSPWR10 Network has the following specifications:  
 **Node**: 5300  
 **Edges**: 8271
+The result obtained Removing each time 1% of the all nodes is the following:
+![BCSPWR10](./src/attack_results_1percent.png)
+As we can see the Network is quite Robust infact to destroy it we ha to remove roughly the 60% of the nodes
+The fastetìst Attack to destroy the Network in the case of Size of Largest component is the Betweenness Attack while for the Diameter is the Highest Degree Attack because the Diameter is the longest shortest path between two nodes and removing the nodes with the highest degree we are removing the nodes with the most connections so we are increasing the shortest path between two nodes.
+
+## 3. Test on Random Graphs 
+In this last test we will test the robustness of the network on random graphs. We generate a random graph with 5300 nodes and 8271 edges, the same number of nodes and edges of the rbecause the Diameter is the longest shortest path between two nodes and removing the nodes with the highest degree we are removing the nodes with the most connections so we are increasing the shortest path between two nodes.eal network.  
+The result obtained Removing each time 1% of the all nodes is the following:
+![RandomG](./src/attack_result_randomGraph_1percent.png)
+
+As we expected the Random Graph is more robust than the Real Network even if the Real Network follow a behaviour similar to the Random Graph but the result obtained for what concerns the Size of the Largest Component is quite similar to the result obtained for the Real Network.
+In this case the fastest Attack for the Size of the Largest Component is the Closeness Attack while for the Diameter is the Betweenness Attack.
