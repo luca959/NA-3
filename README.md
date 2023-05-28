@@ -86,4 +86,5 @@ In this last test we will test the robustness of the network on random graphs. W
 The result obtained Removing each time 1% of the all nodes is the following:
 ![RandomG](./src/attack_result_randomGraph_1percent.png)
 
-As we expected the Random Graph is a little bit more robust than the Real Network even if the Real Network follow a behaviour similar to the Random Graph but the result obtained for what concerns the Size of the Largest Component is quite similar to the result obtained for the Real Network, while the Diameter analysis is pretty different the real network for what concerns the diameter value is more robust than the Random graph.
+As we expected the Random Graph is a little bit more robust than the Real Network even if the Real Network follow a behaviour similar to the Random Graph but the result obtained for what concerns the Size of the Largest Component is quite similar to the result obtained for the Real Network, while the Diameter analysis is pretty different the random network has a Diameter that reach the maximum value of 250 while the Real Network has a Diameter that reach the maximum value of 135.
+Anotther interesting behaviour is that the random Network has more linear behaviour while the Real Network has a lot of peak.
