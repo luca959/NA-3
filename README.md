@@ -48,10 +48,10 @@ You have some equations: look for ">>>>>  gd2md-html alert:  equation..." in out
 
 
 
-    **Network Analysis **
+    # Network Analysis
 
 
-    **Third Assignment - Network robustness **
+    ## Third Assignment - Network robustness 
 
 
     In this third and final assignment, we will test the robustness of networks using different kinds of attacks. 
