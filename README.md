@@ -113,7 +113,7 @@ $$f_C=\frac{1}{\frac{\langle k^2\rangle}{\langle k\rangle}-1}$$
 
 for the property of the Erdos-Renyi graph, the threshold is calculated like the following
 
-$$f_{C}^{ER}=1\frac{\}{\langle k \rangle}$$
+$$f_{C}^{ER}=1\frac{1}{\langle k \rangle}$$
 
 $$f_C = 0.65$$
 
