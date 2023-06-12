@@ -78,7 +78,7 @@ If we decrease the number of k, the network will be less robust.
 The BCSPWR10 Network has the following specifications:  
 **Node**: 5300  
 **Edges**: 8271
-
+![real_net](./real.png)
 
 As we can see the behavior of the network is less robust respect the previous model, the fastest attacks have roughly the same behavior cause of the Poisson distribution of the network even if The betweenness attack is a little bit more effective while the network is more robust respect the targeted attack.
 
@@ -87,6 +87,8 @@ As we can see the behavior of the network is less robust respect the previous mo
 In this last test, we will test the robustness of the network on random graphs.
 
 We generate a random graph with 5300 nodes and 8271 edges. The result obtained from Removing each time 1% of all nodes is the following:
+![random](./rnd.png)
+
 
 As we expected the Random Graph is a little bit more robust than the Real Network even if the Real Network follows a behavior similar to the Random Graph, the result obtained for what concerns the Size of the Largest Component is quite similar to the result obtained for the Real Network, while the Diameter analysis is pretty different the random network has a Diameter that reaches the maximum value of 250 while the Real Network has a Diameter that reaches the maximum value of 135. 
 
@@ -104,8 +106,15 @@ If the threshold of the real graph is > of the threshold of the random graph the
 By the previous experiment, we expect to have a threshold of the real graph < of the threshold of the random graph.
 
 The threshold is calculated as follows:
+![fc](./fc.png)
+for the property of the Erdos-Renyi graph, the threshold is calculated like the following
+![fcer](./fcer.png)
+![fc](./fc_val.png)
+![fc](./fcer_val.png)
+since is fC<fCER confirmed empirically that our network is not robust to rand attack
 
- 
+
+
 
 
 
