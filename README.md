@@ -108,11 +108,17 @@ If the threshold of the real graph is > of the threshold of the random graph the
 By the previous experiment, we expect to have a threshold of the real graph < of the threshold of the random graph.
 
 The threshold is calculated as follows:
+
 ![fc](./fc.png)
+
 for the property of the Erdos-Renyi graph, the threshold is calculated like the following
+
 ![fcer](./fcer.png)
+
 ![fc](./fc_val.png)
+
 ![fc](./fcer_val.png)
+
 since is fC<fCER confirmed empirically that our network is not robust to rand attack
 
 
