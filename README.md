@@ -87,6 +87,7 @@ As we can see the behavior of the network is less robust respect the previous mo
 In this last test, we will test the robustness of the network on random graphs. We generate a random graph with 5300 nodes and 8271 edges. The result obtained from Removing each time 1% of all nodes is the following:
 
 As we expected the Random Graph is a little bit more robust than the Real Network even if the Real Network follows a behavior similar to the Random Graph, the result obtained for what concerns the Size of the Largest Component is quite similar to the result obtained for the Real Network, while the Diameter analysis is pretty different the random network has a Diameter that reaches the maximum value of 250 while the Real Network has a Diameter that reaches the maximum value of 135. 
+
 Another interesting behavior is that the random Network has more linear behavior while the Real Network has a lot of peaks.
 
 ## 4. Conclusion
