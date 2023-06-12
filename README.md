@@ -91,10 +91,15 @@ Another interesting behavior is that the random Network has more linear behavior
 
 ## 4. Conclusion
 In the above part we compare our network with the random one generated with the same number of nodes and edges.
+
 We want to prove the Molloy-Reed Criteria to evaluate the robustness of the network also called Resilience, very important in our network.
+
 we have to find the critical threshold both for the Random and Real graph, which make us understand when the giant component is no more identifiable.
+
 If the threshold of the real graph is > of the threshold of the random graph the real is robust to random attack.
-By the previous experiment, we expect to have a threshold of the real graph < of the threshold of the random graph 
+
+By the previous experiment, we expect to have a threshold of the real graph < of the threshold of the random graph.
+
 The threshold is calculated as follows:
 
  
