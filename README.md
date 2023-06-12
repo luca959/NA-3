@@ -40,7 +40,7 @@ The graph is constructed by randomly assigning edges between a fixed number of n
   
 <strong>n</strong>:100 |
 <strong>p</strong>:0.1
-![erdos-renyi-n100-p0.1](./src/erdos-renyi-n100-p0.1.png)
+![erdos-renyi-n100-p0.1](./erdos.png)
 
 These graphs show the change in size and diameter during an attack on the network. The x-axis represents the percentage of nodes removed from the network while on the y-axis there is the size of the largest connected component and the diameter.
 
@@ -66,7 +66,7 @@ It's defined by three parameters: `n`, `k` and `p`. `n` is the number of nodes, 
 <strong>p</strong>:0.1 |
 <strong>k</strong>:15
 
-![watts-strogatz-n100-p0.1-k5](./src/watts-strogatz-n100-p0.1-k5.png)
+![watts-strogatz-n100-p0.1-k5](./watts.png)
 
 As concerns the Watts-Strogatz graph, is a bit more robust than Erdos Renyi because of the higher clustering value, as a matter of fact ,if some nodes are randomly removed, the Watts-Strogatz network can still maintain connections between nodes through alternative paths, ensuring greater resilience compared to a completely random network like Erdos-Rényi.
 If we decrease the number of k, the network will be less robust.
