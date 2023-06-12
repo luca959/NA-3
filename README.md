@@ -78,6 +78,7 @@ If we decrease the number of k, the network will be less robust.
 The BCSPWR10 Network has the following specifications:  
 **Node**: 5300  
 **Edges**: 8271
+
 ![real_net](./real.png)
 
 As we can see the behavior of the network is less robust respect the previous model, the fastest attacks have roughly the same behavior cause of the Poisson distribution of the network even if The betweenness attack is a little bit more effective while the network is more robust respect the targeted attack.
@@ -87,6 +88,7 @@ As we can see the behavior of the network is less robust respect the previous mo
 In this last test, we will test the robustness of the network on random graphs.
 
 We generate a random graph with 5300 nodes and 8271 edges. The result obtained from Removing each time 1% of all nodes is the following:
+
 ![random](./rnd.png)
 
 
