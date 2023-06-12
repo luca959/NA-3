@@ -109,17 +109,17 @@ By the previous experiment, we expect to have a threshold of the real graph < of
 
 The threshold is calculated as follows:
 
-![fc](./fc.png)
+$$f_C=\frac{1}{\frac{\langle k^2\rangle}{\langle k\rangle}-1}$$
 
 for the property of the Erdos-Renyi graph, the threshold is calculated like the following
 
-![fcer](./fcer.png)
+$$f_{C}^{ER}=1\frac{\}{\langle k \rangle}$$
 
-![fc](./fc_val.png)
+$$f_C = 0.65$$
 
-![fc](./fcer_val.png)
+$$f_{C}^{ER} = 0.7$$
 
-since is fC<fCER confirmed empirically that our network is not robust to rand attack
+Since $f_{C} < f_{C}^{ER}$ we can confirm that our network is not robust to random attacks.
 
 
 
